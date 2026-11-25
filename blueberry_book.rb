@@ -111,5 +111,33 @@ a = 100
 条件分岐
 if文
 switch文・・・switch分はcase節にて条件と処理を書いた後にbreakで切る必要がある。切らないとそのまま次の処理にいっています。
+
 繰り返し処理
+while文　while(条件){処理}
+　条件が真の間繰り返し処理を行う。
+  条件に最初からtrueを入れてその中if文➕breakを書くやり方もあるよね！
+↓
+let sun = 0
+let i = 1
+
+while(true){
+    if(i > 10){
+        break;
+    }
+    console.log(i);
+    sun += i
+    i++
+}
+ 　他にもcontinueをいれてその回の繰り返し処理だけを終わらせることもできるよね！
+let i = 1
+while(i <= 100){
+    i++;
+    if(i % 2 === 1){
+        continue;
+    }
+    console.log(i);
+}　// 2 4 6 8 と偶数だけ出力されるよ。
+
+ 
+
 
